@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>welcome</h1>
+    <h2>Bienvenue <%= current_user.email %> !</h2>
+    <%= link_to "Se déconnecter", session_path(session[:user_id]), method: :delete %>
+  </body>
+</html>
